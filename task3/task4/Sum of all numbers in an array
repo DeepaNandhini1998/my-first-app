@@ -1,0 +1,20 @@
+//programs in anonymous function & IIFE
+//sum of all numbers in an array
+
+(function(myArr) {
+    var sum = 0;
+    for(var i=0; i<myArr.length; i++) {
+        sum = sum + myArr[i];
+    }
+    return sum;
+}) ([1, 2, 3, 4, 5, 6])
+
+//arrow fn
+//sum of all numbers in an array
+
+let arrnum = [1, 2, 3, 4, 5, 6];
+let sum = 0;
+arrnum.forEach(value => {
+    sum +=value;
+});
+console.log(sum);

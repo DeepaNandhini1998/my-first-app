@@ -1,0 +1,7 @@
+//arrow function
+//palindrome in array
+const getAllWords = (words) =>
+    words.filter((word) =>
+        word.split("").reverse().join("") === word
+    );
+console.log(getAllWords(["abc", "mom", "madam", "bob"]));

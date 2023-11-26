@@ -1,0 +1,32 @@
+//program in anonymous function & IIFE
+//Return all the prime numbers in an array
+
+(function(myArray) {
+    myArray = myArray.filter((number) => {
+        for (var i=2; i<=Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+
+            }
+        }
+        return true;
+    });
+    console.log(myArray);
+}) ([1, 2, 3, 4, 5, 6, 7])
+
+
+//arrow fn
+//return all the prime number in an array
+
+let myNumber = [1, 2, 3, 4, 5, 6, 7]
+function findPrime(myArray) {
+    myArray = myArray.filter((myNumber) => {
+        for (var i=2; i<=Math.sqrt(myNumber); i++) {
+            if (myNumber % i === 0) {
+                return false;
+            }
+        }
+    });
+    console.log(myArray);
+}
+findPrime(myNumber);

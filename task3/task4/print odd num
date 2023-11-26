@@ -1,0 +1,24 @@
+// Do the below programs in anonymous function & IIFE
+//print odd numbers in an Array.
+
+(function(Array) {
+    for (var i=0;i<Array.length; i++) {
+        if(Array[i] % 2 != 0) {
+            console.log(Array[i])
+        }
+
+    }
+}) ([1, 2, 3, 4, 5, 6, 7])
+
+
+// Do the program in arrow function
+//print odd numbers in an array.
+
+const myArr = [1, 2, 3, 4, 5, 6, 7];
+function oddnumbers(array) {
+    return array.filter(number => {
+        return number % 2 !==0;
+
+    });
+}
+console.log(oddnumbers(myArr));
