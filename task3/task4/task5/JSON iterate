@@ -1,0 +1,22 @@
+//forloop 
+var mark = [10,15,16,20,24];
+for ( var i=0; i<5; i++)
+console.log(mark[i]);
+
+//for in
+var car ={"name":"BMW", "model":2023}
+for (var i in car)
+console.log(i,car[i]);
+
+//for of
+var examresults = [10,20,30,40]
+for(var i of examresults)
+console.log(i);
+
+//forEach
+var test = [11,22,33,44,55];
+test.forEach(function(value,index)
+console.log(value,index));
+
+
+
