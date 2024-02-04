@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+    margin: auto;
+    text-align: justify;
+    width: 100%;
+  }
+  img {
+    height: 220px;
+  }
+  
+  .country_row {
+    margin: 1.5%;
+    padding: 3% 0%;
+  }
+  
+  .card {
+    background-image: linear-gradient(to right, #85ffbd, #fffb7d);
+  }
+  .card-header {
+    background-color: #f3f2c9;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .weather-data {
+    text-align: justify;
+    margin: auto;
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      padding-top: 10%;
+      margin: auto;
+    }
+    .weather-data {
+      text-align: justify;
+      margin: auto;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
